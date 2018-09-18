@@ -1,0 +1,2 @@
+# AddUserInUbuntu
+ubuntuサーバでユーザを追加するためのscript
