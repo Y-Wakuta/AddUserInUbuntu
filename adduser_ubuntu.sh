@@ -10,9 +10,7 @@ set -e
 user_name=$1
 pub_key_path=$2
 
-script_dir="$(cd $(dirname $0); pwd)"
 useradd -m $user_name
-
 mkdir -p /home/$user_name/.ssh
 touch /home/$user_name/.ssh/authorized_keys
 echo $pub_key_path > /home/$user_name/.ssh/authorized_keys
