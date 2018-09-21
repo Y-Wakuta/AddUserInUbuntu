@@ -13,7 +13,7 @@ pub_key_path=$2
 useradd -s /bin/bash -m $user_name
 mkdir -p /home/$user_name/.ssh
 touch /home/$user_name/.ssh/authorized_keys
-echo $pub_key_path > /home/$user_name/.ssh/authorized_keys
+cat $pub_key_path > /home/$user_name/.ssh/authorized_keys
 
 chown $user_name:$user_name /home/$user_name
 chown -R $user_name:$user_name /home/$user_name/.ssh
