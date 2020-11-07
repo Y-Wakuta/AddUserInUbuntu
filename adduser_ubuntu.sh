@@ -21,3 +21,4 @@ chown -R $user_name:$user_name /home/$user_name/.ssh
 chmod 755 /home/$user_name
 chmod -R 700 /home/$user_name/.ssh
 chmod 600 /home/$user_name/.ssh/authorized_keys
+gpasswd -a $user_name docker
